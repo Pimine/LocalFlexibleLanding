@@ -70,7 +70,6 @@
 		EB30C93A296EF0F2007EBDA9 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				EB30C972296F0EAC007EBDA9 /* protocols */,
 				EB30C95D296EF25F007EBDA9 /* delegates */,
 				EB30C95B296EF226007EBDA9 /* models */,
 				EB30C94A296EF21C007EBDA9 /* FlexibleLandingProvider.swift */,
@@ -95,6 +94,8 @@
 				EB30C948296EF21C007EBDA9 /* FlexibleLanding.swift */,
 				EB30C946296EF21C007EBDA9 /* FlexibleLandingModel.swift */,
 				EB30C94F296EF21C007EBDA9 /* FlexibleLandingScreen.swift */,
+				EB30C95E296EF308007EBDA9 /* FlexibleLandingPurchaseDetails.swift */,
+				EB30C962296EF376007EBDA9 /* FlexibleLandingPaymentTransaction.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -107,15 +108,6 @@
 				EB30C949296EF21C007EBDA9 /* FlexibleLandingDelegate.swift */,
 			);
 			name = delegates;
-			sourceTree = "<group>";
-		};
-		EB30C972296F0EAC007EBDA9 /* protocols */ = {
-			isa = PBXGroup;
-			children = (
-				EB30C95E296EF308007EBDA9 /* FlexibleLandingPurchaseDetails.swift */,
-				EB30C962296EF376007EBDA9 /* FlexibleLandingPaymentTransaction.swift */,
-			);
-			path = protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
