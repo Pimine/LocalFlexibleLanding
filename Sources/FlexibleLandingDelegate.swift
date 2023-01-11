@@ -12,14 +12,6 @@ public protocol FlexibleLandingDelegate: AnyObject {
         _ flexibleLanding: FlexibleLanding,
         didFinishLandingFlow landing: FlexibleLandingModel
     )
-    
-    func flexibleLanding(
-        _ flexibleLanding: FlexibleLanding,
-        didCommitPurchaseOf product: String,
-        screen: FlexibleLandingScreen,
-        landing: FlexibleLandingModel,
-        withResult result: FlexibleLandingCommitPurchaseResult
-    )
 }
 
 // MARK: - Default implementation
@@ -35,13 +27,5 @@ public extension FlexibleLandingDelegate {
     func flexibleLanding(
         _ flexibleLanding: FlexibleLanding,
         didFinishLandingFlow landing: FlexibleLandingModel
-    ) { }
-    
-    func flexibleLanding(
-        _ flexibleLanding: FlexibleLanding,
-        didCommitPurchaseOf product: String,
-        screen: FlexibleLandingScreen,
-        landing: FlexibleLandingModel,
-        withResult result: FlexibleLandingCommitPurchaseResult
     ) { }
 }

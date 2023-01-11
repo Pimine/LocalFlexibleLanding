@@ -41,7 +41,7 @@ public final class FlexibleLandingCoordinator {
         guard let screen = screenQueue[safe: index] else {
             return finishLandingFlow(animated: animated)
         }
-        let controller = provider.viewController(for: screen, in: self)
+        let controller = provider.viewController(for: screen, inside: landing, coordinator: self)
         DispatchQueue.main.async {
             self.navigationController.pushViewController(controller, animated: animated)
         }
@@ -67,10 +67,6 @@ extension FlexibleLandingCoordinator: FlexibleLandingScreenDelegate {
                 self.delegate?.flexibleLandingCoordinator(self, didFinishLandingFlow: self.landing)
             }
         }
-    }
-    
-    public func didCommitPurchase(of product: String, result: FlexibleLandingCommitPurchaseResult, screen: FlexibleLandingScreen) {
-        delegate?.flexibleLandingCoordinator(self, didCommitPurchaseOf: product, screen: screen, result: result)
     }
 }
 

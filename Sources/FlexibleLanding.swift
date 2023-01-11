@@ -46,20 +46,6 @@ extension FlexibleLanding: FlexibleLandingCoordinatorDelegate {
         coordinators.removeAll(coordinator)
         delegate?.flexibleLanding(self, didFinishLandingFlow: landing)
     }
-    
-    func flexibleLandingCoordinator(
-        _ coordinator: FlexibleLandingCoordinator,
-        didCommitPurchaseOf product: String,
-        screen: FlexibleLandingScreen,
-        result: FlexibleLandingCommitPurchaseResult
-    ) {
-        delegate?.flexibleLanding(
-            self, didCommitPurchaseOf: product,
-            screen: screen,
-            landing: coordinator.landing,
-            withResult: result
-        )
-    }
 }
 
 // MARK: Makers

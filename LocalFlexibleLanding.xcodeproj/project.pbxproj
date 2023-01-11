@@ -16,9 +16,6 @@
 		EB30C956296EF21C007EBDA9 /* FlexibleLandingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30C94B296EF21C007EBDA9 /* FlexibleLandingCoordinator.swift */; };
 		EB30C959296EF21C007EBDA9 /* FlexibleLandingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30C94F296EF21C007EBDA9 /* FlexibleLandingScreen.swift */; };
 		EB30C95A296EF21C007EBDA9 /* FlexibleLandingScreenDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30C950296EF21C007EBDA9 /* FlexibleLandingScreenDelegate.swift */; };
-		EB30C95F296EF308007EBDA9 /* FlexibleLandingPurchaseDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30C95E296EF308007EBDA9 /* FlexibleLandingPurchaseDetails.swift */; };
-		EB30C961296EF33D007EBDA9 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30C960296EF33D007EBDA9 /* Typealiases.swift */; };
-		EB30C963296EF376007EBDA9 /* FlexibleLandingPaymentTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30C962296EF376007EBDA9 /* FlexibleLandingPaymentTransaction.swift */; };
 		EB30C965296EF3D1007EBDA9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30C964296EF3D1007EBDA9 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,9 +30,6 @@
 		EB30C94B296EF21C007EBDA9 /* FlexibleLandingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleLandingCoordinator.swift; sourceTree = "<group>"; };
 		EB30C94F296EF21C007EBDA9 /* FlexibleLandingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleLandingScreen.swift; sourceTree = "<group>"; };
 		EB30C950296EF21C007EBDA9 /* FlexibleLandingScreenDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleLandingScreenDelegate.swift; sourceTree = "<group>"; };
-		EB30C95E296EF308007EBDA9 /* FlexibleLandingPurchaseDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleLandingPurchaseDetails.swift; sourceTree = "<group>"; };
-		EB30C960296EF33D007EBDA9 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
-		EB30C962296EF376007EBDA9 /* FlexibleLandingPaymentTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleLandingPaymentTransaction.swift; sourceTree = "<group>"; };
 		EB30C964296EF3D1007EBDA9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,7 +68,6 @@
 				EB30C95B296EF226007EBDA9 /* models */,
 				EB30C94A296EF21C007EBDA9 /* FlexibleLandingProvider.swift */,
 				EB30C94B296EF21C007EBDA9 /* FlexibleLandingCoordinator.swift */,
-				EB30C960296EF33D007EBDA9 /* Typealiases.swift */,
 				EB30C964296EF3D1007EBDA9 /* Extensions.swift */,
 			);
 			path = Sources;
@@ -94,8 +87,6 @@
 				EB30C948296EF21C007EBDA9 /* FlexibleLanding.swift */,
 				EB30C946296EF21C007EBDA9 /* FlexibleLandingModel.swift */,
 				EB30C94F296EF21C007EBDA9 /* FlexibleLandingScreen.swift */,
-				EB30C95E296EF308007EBDA9 /* FlexibleLandingPurchaseDetails.swift */,
-				EB30C962296EF376007EBDA9 /* FlexibleLandingPaymentTransaction.swift */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -191,13 +182,10 @@
 			files = (
 				EB30C955296EF21C007EBDA9 /* FlexibleLandingProvider.swift in Sources */,
 				EB30C953296EF21C007EBDA9 /* FlexibleLanding.swift in Sources */,
-				EB30C961296EF33D007EBDA9 /* Typealiases.swift in Sources */,
 				EB30C956296EF21C007EBDA9 /* FlexibleLandingCoordinator.swift in Sources */,
-				EB30C963296EF376007EBDA9 /* FlexibleLandingPaymentTransaction.swift in Sources */,
 				EB30C952296EF21C007EBDA9 /* FlexibleLandingCoordinatorDelegate.swift in Sources */,
 				EB30C959296EF21C007EBDA9 /* FlexibleLandingScreen.swift in Sources */,
 				EB30C965296EF3D1007EBDA9 /* Extensions.swift in Sources */,
-				EB30C95F296EF308007EBDA9 /* FlexibleLandingPurchaseDetails.swift in Sources */,
 				EB30C951296EF21C007EBDA9 /* FlexibleLandingModel.swift in Sources */,
 				EB30C954296EF21C007EBDA9 /* FlexibleLandingDelegate.swift in Sources */,
 				EB30C95A296EF21C007EBDA9 /* FlexibleLandingScreenDelegate.swift in Sources */,
