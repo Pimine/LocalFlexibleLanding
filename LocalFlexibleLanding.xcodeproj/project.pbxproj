@@ -8,11 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		EB30C93C296EF0F2007EBDA9 /* LocalFlexibleLanding.h in Headers */ = {isa = PBXBuildFile; fileRef = EB30C93B296EF0F2007EBDA9 /* LocalFlexibleLanding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB30C951296EF21C007EBDA9 /* FlexibleLandingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30C946296EF21C007EBDA9 /* FlexibleLandingModel.swift */; };
+		EB30C952296EF21C007EBDA9 /* FlexibleLandingCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30C947296EF21C007EBDA9 /* FlexibleLandingCoordinatorDelegate.swift */; };
+		EB30C953296EF21C007EBDA9 /* FlexibleLanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30C948296EF21C007EBDA9 /* FlexibleLanding.swift */; };
+		EB30C954296EF21C007EBDA9 /* FlexibleLandingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30C949296EF21C007EBDA9 /* FlexibleLandingDelegate.swift */; };
+		EB30C955296EF21C007EBDA9 /* FlexibleLandingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30C94A296EF21C007EBDA9 /* FlexibleLandingProvider.swift */; };
+		EB30C956296EF21C007EBDA9 /* FlexibleLandingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30C94B296EF21C007EBDA9 /* FlexibleLandingCoordinator.swift */; };
+		EB30C959296EF21C007EBDA9 /* FlexibleLandingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30C94F296EF21C007EBDA9 /* FlexibleLandingScreen.swift */; };
+		EB30C95A296EF21C007EBDA9 /* FlexibleLandingScreenDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30C950296EF21C007EBDA9 /* FlexibleLandingScreenDelegate.swift */; };
+		EB30C95F296EF308007EBDA9 /* FlexibleLandingPurchaseDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30C95E296EF308007EBDA9 /* FlexibleLandingPurchaseDetails.swift */; };
+		EB30C961296EF33D007EBDA9 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30C960296EF33D007EBDA9 /* Typealiases.swift */; };
+		EB30C963296EF376007EBDA9 /* FlexibleLandingPaymentTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30C962296EF376007EBDA9 /* FlexibleLandingPaymentTransaction.swift */; };
+		EB30C965296EF3D1007EBDA9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30C964296EF3D1007EBDA9 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EB30C938296EF0F2007EBDA9 /* LocalFlexibleLanding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocalFlexibleLanding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB30C93B296EF0F2007EBDA9 /* LocalFlexibleLanding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalFlexibleLanding.h; sourceTree = "<group>"; };
+		EB30C946296EF21C007EBDA9 /* FlexibleLandingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleLandingModel.swift; sourceTree = "<group>"; };
+		EB30C947296EF21C007EBDA9 /* FlexibleLandingCoordinatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleLandingCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		EB30C948296EF21C007EBDA9 /* FlexibleLanding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleLanding.swift; sourceTree = "<group>"; };
+		EB30C949296EF21C007EBDA9 /* FlexibleLandingDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleLandingDelegate.swift; sourceTree = "<group>"; };
+		EB30C94A296EF21C007EBDA9 /* FlexibleLandingProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleLandingProvider.swift; sourceTree = "<group>"; };
+		EB30C94B296EF21C007EBDA9 /* FlexibleLandingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleLandingCoordinator.swift; sourceTree = "<group>"; };
+		EB30C94F296EF21C007EBDA9 /* FlexibleLandingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleLandingScreen.swift; sourceTree = "<group>"; };
+		EB30C950296EF21C007EBDA9 /* FlexibleLandingScreenDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleLandingScreenDelegate.swift; sourceTree = "<group>"; };
+		EB30C95E296EF308007EBDA9 /* FlexibleLandingPurchaseDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleLandingPurchaseDetails.swift; sourceTree = "<group>"; };
+		EB30C960296EF33D007EBDA9 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
+		EB30C962296EF376007EBDA9 /* FlexibleLandingPaymentTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleLandingPaymentTransaction.swift; sourceTree = "<group>"; };
+		EB30C964296EF3D1007EBDA9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,7 +53,8 @@
 		EB30C92E296EF0F2007EBDA9 = {
 			isa = PBXGroup;
 			children = (
-				EB30C93A296EF0F2007EBDA9 /* LocalFlexibleLanding */,
+				EB30C93A296EF0F2007EBDA9 /* Sources */,
+				EB30C942296EF121007EBDA9 /* Support files */,
 				EB30C939296EF0F2007EBDA9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -42,12 +67,47 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EB30C93A296EF0F2007EBDA9 /* LocalFlexibleLanding */ = {
+		EB30C93A296EF0F2007EBDA9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EB30C95D296EF25F007EBDA9 /* delegates */,
+				EB30C95B296EF226007EBDA9 /* models */,
+				EB30C94A296EF21C007EBDA9 /* FlexibleLandingProvider.swift */,
+				EB30C94B296EF21C007EBDA9 /* FlexibleLandingCoordinator.swift */,
+				EB30C960296EF33D007EBDA9 /* Typealiases.swift */,
+				EB30C964296EF3D1007EBDA9 /* Extensions.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EB30C942296EF121007EBDA9 /* Support files */ = {
 			isa = PBXGroup;
 			children = (
 				EB30C93B296EF0F2007EBDA9 /* LocalFlexibleLanding.h */,
 			);
-			path = LocalFlexibleLanding;
+			path = "Support files";
+			sourceTree = "<group>";
+		};
+		EB30C95B296EF226007EBDA9 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				EB30C948296EF21C007EBDA9 /* FlexibleLanding.swift */,
+				EB30C946296EF21C007EBDA9 /* FlexibleLandingModel.swift */,
+				EB30C94F296EF21C007EBDA9 /* FlexibleLandingScreen.swift */,
+				EB30C95E296EF308007EBDA9 /* FlexibleLandingPurchaseDetails.swift */,
+				EB30C962296EF376007EBDA9 /* FlexibleLandingPaymentTransaction.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		EB30C95D296EF25F007EBDA9 /* delegates */ = {
+			isa = PBXGroup;
+			children = (
+				EB30C950296EF21C007EBDA9 /* FlexibleLandingScreenDelegate.swift */,
+				EB30C947296EF21C007EBDA9 /* FlexibleLandingCoordinatorDelegate.swift */,
+				EB30C949296EF21C007EBDA9 /* FlexibleLandingDelegate.swift */,
+			);
+			name = delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +189,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB30C955296EF21C007EBDA9 /* FlexibleLandingProvider.swift in Sources */,
+				EB30C953296EF21C007EBDA9 /* FlexibleLanding.swift in Sources */,
+				EB30C961296EF33D007EBDA9 /* Typealiases.swift in Sources */,
+				EB30C956296EF21C007EBDA9 /* FlexibleLandingCoordinator.swift in Sources */,
+				EB30C963296EF376007EBDA9 /* FlexibleLandingPaymentTransaction.swift in Sources */,
+				EB30C952296EF21C007EBDA9 /* FlexibleLandingCoordinatorDelegate.swift in Sources */,
+				EB30C959296EF21C007EBDA9 /* FlexibleLandingScreen.swift in Sources */,
+				EB30C965296EF3D1007EBDA9 /* Extensions.swift in Sources */,
+				EB30C95F296EF308007EBDA9 /* FlexibleLandingPurchaseDetails.swift in Sources */,
+				EB30C951296EF21C007EBDA9 /* FlexibleLandingModel.swift in Sources */,
+				EB30C954296EF21C007EBDA9 /* FlexibleLandingDelegate.swift in Sources */,
+				EB30C95A296EF21C007EBDA9 /* FlexibleLandingScreenDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +331,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4SZVTPHQLW;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -268,18 +340,20 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.LocalFlexibleLanding;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -287,7 +361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 0;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4SZVTPHQLW;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -296,18 +370,20 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pimine.LocalFlexibleLanding;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
