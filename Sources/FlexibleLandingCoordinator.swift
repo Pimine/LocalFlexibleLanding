@@ -7,11 +7,14 @@ public final class FlexibleLandingCoordinator {
     // MARK: Properties
     
     public let landing: FlexibleLandingModel
-    private let provider: FlexibleLandingProvider
-    private let placeholder: Int
     
-    private var navigationController: UINavigationController
+    public let placeholder: Int
+    
+    private let provider: FlexibleLandingProvider
+    
     private var screenQueue: [FlexibleLandingScreen]
+    
+    private var navigationController: UINavigationController!
     
     // MARK: Initialization
     
@@ -20,8 +23,8 @@ public final class FlexibleLandingCoordinator {
         self.landing = landing
         self.placeholder = placeholder
         
-        self.navigationController = provider.navigationController(for: landing)
         self.screenQueue = landing.screens
+        self.navigationController = provider.navigationController(for: landing, coordinator: self)
     }
     
     // MARK: Methods
