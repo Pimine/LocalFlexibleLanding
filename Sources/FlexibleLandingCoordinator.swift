@@ -14,7 +14,7 @@ public final class FlexibleLandingCoordinator {
     
     private var screenQueue: [FlexibleLandingScreen]
     
-    private var navigationController: UINavigationController!
+    private(set) var navigationController: UINavigationController!
     
     // MARK: Initialization
     

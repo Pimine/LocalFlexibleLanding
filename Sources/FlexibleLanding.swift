@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 public final class FlexibleLanding {
     
@@ -22,10 +23,13 @@ public final class FlexibleLanding {
         placeholder: Int,
         animated: Bool,
         completion: (() -> Void)? = nil
-    ) {
+    ) -> UINavigationController {
+        
         let coordinator = makeCoordinator(for: landing, placeholder: placeholder)
         coordinators.append(coordinator)
         coordinator.start(animated: animated, completion: completion)
+        
+        return coordinator.navigationController
     }
 }
 
