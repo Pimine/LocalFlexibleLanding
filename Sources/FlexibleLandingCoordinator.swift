@@ -40,13 +40,16 @@ public final class FlexibleLandingCoordinator {
         }
     }
     
-    private func dequeueScreen(at index: Int, animated: Bool) {
+    private func dequeueScreen(at index: Int, animated: Bool, completion: (() -> Void)? = nil) {
         guard let screen = screenQueue[safe: index] else {
             return finishLandingFlow(animated: animated)
         }
         let controller = provider.viewController(for: screen, inside: landing, coordinator: self)
         DispatchQueue.main.async {
+            CATransaction.begin()
+            CATransaction.setCompletionBlock(completion)
             self.navigationController.pushViewController(controller, animated: animated)
+            CATransaction.commit()
         }
     }
 }
@@ -55,19 +58,25 @@ public final class FlexibleLandingCoordinator {
 
 extension FlexibleLandingCoordinator: FlexibleLandingScreenDelegate {
     
-    public func finishScreenFlow(for screen: FlexibleLandingScreen, animated: Bool) {
-        delegate?.flexibleLandingCoordinator(self, didFinishScreenFlow: screen)
+    public func finishScreenFlow(for screen: FlexibleLandingScreen, animated: Bool, completion: (() -> Void)? = nil) {
         guard let index = screenQueue.firstIndex(of: screen) else {
-            finishLandingFlow(animated: animated)
+            finishLandingFlow(animated: animated, completion: {
+                self.delegate?.flexibleLandingCoordinator(self, didFinishScreenFlow: screen)
+                completion?()
+            })
             return
         }
-        dequeueScreen(at: index + 1, animated: animated)
+        dequeueScreen(at: index + 1, animated: animated, completion: {
+            self.delegate?.flexibleLandingCoordinator(self, didFinishScreenFlow: screen)
+            completion?()
+        })
     }
     
-    public func finishLandingFlow(animated: Bool) {
+    public func finishLandingFlow(animated: Bool, completion: (() -> Void)? = nil) {
         DispatchQueue.main.async {
             self.navigationController.dismiss(animated: animated) {
                 self.delegate?.flexibleLandingCoordinator(self, didFinishLandingFlow: self.landing)
+                completion?()
             }
         }
     }
