@@ -3,10 +3,10 @@ import UIKit
 public protocol FlexibleLandingProvider {
     func navigationController(
         for landing: FlexibleLandingModel,
-        coordinator: FlexibleLandingCoordinator) -> UINavigationController
+        context: [String: Any]) -> UINavigationController
     
     func viewController(
         for screen: FlexibleLandingScreen,
         inside landing: FlexibleLandingModel,
-        coordinator: FlexibleLandingCoordinator) -> UIViewController
+        context: [String: Any]) -> UIViewController
 }

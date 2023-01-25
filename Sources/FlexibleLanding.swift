@@ -20,12 +20,12 @@ public final class FlexibleLanding {
     
     public func showLanding(
         _ landing: FlexibleLandingModel,
-        placeholder: Int,
+        context: [String: Any],
         animated: Bool,
         completion: (() -> Void)? = nil
     ) -> UINavigationController {
         
-        let coordinator = makeCoordinator(for: landing, placeholder: placeholder)
+        let coordinator = makeCoordinator(for: landing, context: context)
         coordinators.append(coordinator)
         coordinator.start(animated: animated, completion: completion)
         
@@ -55,8 +55,8 @@ extension FlexibleLanding: FlexibleLandingCoordinatorDelegate {
 // MARK: Makers
 private extension FlexibleLanding {
     
-    func makeCoordinator(for landing: FlexibleLandingModel, placeholder: Int) -> FlexibleLandingCoordinator {
-        let coordinator = FlexibleLandingCoordinator(landing: landing, placeholder: placeholder, provider: provider)
+    func makeCoordinator(for landing: FlexibleLandingModel, context: [String: Any]) -> FlexibleLandingCoordinator {
+        let coordinator = FlexibleLandingCoordinator(landing: landing, context: context, provider: provider)
         coordinator.delegate = self
         return coordinator
     }
