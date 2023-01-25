@@ -24,7 +24,7 @@ public final class FlexibleLandingCoordinator {
         self.context = context
         
         self.screenQueue = landing.screens
-        self.navigationController = provider.navigationController(for: landing, context: context)
+        self.navigationController = provider.navigationController(for: landing, context: context, coordinator: self)
     }
     
     // MARK: Methods
@@ -44,7 +44,7 @@ public final class FlexibleLandingCoordinator {
         guard let screen = screenQueue[safe: index] else {
             return finishLandingFlow(animated: animated)
         }
-        let controller = provider.viewController(for: screen, inside: landing, context: context)
+        let controller = provider.viewController(for: screen, inside: landing, context: context, coordinator: self)
         DispatchQueue.main.async {
             CATransaction.begin()
             CATransaction.setCompletionBlock(completion)
