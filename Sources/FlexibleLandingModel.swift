@@ -1,6 +1,6 @@
 import Foundation
 
-public struct FlexibleLandingModel: Codable {
+public struct FlexibleLandingModel: Codable, Hashable {
     
     // MARK: Properties
     

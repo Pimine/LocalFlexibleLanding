@@ -1,6 +1,6 @@
 import Foundation
 
-public struct FlexibleLandingScreen: Codable {
+public struct FlexibleLandingScreen: Codable, Hashable {
     
     enum CodingKeys: String, CodingKey {
         case id
