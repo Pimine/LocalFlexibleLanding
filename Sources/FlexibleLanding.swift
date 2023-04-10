@@ -18,18 +18,13 @@ public final class FlexibleLanding {
     
     // MARK: API
     
-    public func showLanding(
+    public func queueLanding(
         _ landing: FlexibleLandingModel,
-        context: [String: Any],
-        animated: Bool,
-        completion: (() -> Void)? = nil
-    ) -> UINavigationController {
-        
+        context: [String: Any]
+    ) -> FlexibleLandingCoordinator {
         let coordinator = makeCoordinator(for: landing, context: context)
         coordinators.append(coordinator)
-        coordinator.start(animated: animated, completion: completion)
-        
-        return coordinator.navigationController
+        return coordinator
     }
 }
 

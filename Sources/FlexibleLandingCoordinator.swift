@@ -14,7 +14,7 @@ public final class FlexibleLandingCoordinator {
     
     private var screenQueue: [FlexibleLandingScreen]
     
-    private(set) var navigationController: UINavigationController!
+    private(set) public var navigationController: UINavigationController!
     
     // MARK: Initialization
     
@@ -29,7 +29,7 @@ public final class FlexibleLandingCoordinator {
     
     // MARK: Methods
     
-    func start(animated: Bool, completion: (() -> Void)? = nil) {
+    public func start(animated: Bool, completion: (() -> Void)? = nil) {
         dequeueScreen(at: 0, animated: false)
         DispatchQueue.main.async {
             UIApplication.shared.topViewController?.present(
