@@ -47,7 +47,10 @@ public final class FlexibleLandingCoordinator {
         let controller = provider.viewController(for: screen, inside: landing, context: context, coordinator: self)
         DispatchQueue.main.async {
             CATransaction.begin()
-            CATransaction.setCompletionBlock(completion)
+            CATransaction.setCompletionBlock({
+                self.delegate?.flexibleLandingCoordinator(self, didPresentScreen: screen)
+                completion?()
+            })
             self.navigationController.pushViewController(controller, animated: animated)
             CATransaction.commit()
         }

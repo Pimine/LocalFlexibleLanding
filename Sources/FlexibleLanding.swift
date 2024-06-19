@@ -33,9 +33,25 @@ extension FlexibleLanding: FlexibleLandingCoordinatorDelegate {
     
     func flexibleLandingCoordinator(
         _ coordinator: FlexibleLandingCoordinator,
+        didPresentScreen screen: FlexibleLandingScreen
+    ) {
+        delegate?.flexibleLanding(
+            self, didPresentScreen: screen,
+            with: coordinator.context,
+            in: coordinator.landing
+        )
+    }
+    
+    func flexibleLandingCoordinator(
+        _ coordinator: FlexibleLandingCoordinator,
         didFinishScreenFlow screen: FlexibleLandingScreen
     ) {
-        delegate?.flexibleLanding(self, didFinishScreenFlow: screen, in: coordinator.landing)
+        delegate?.flexibleLanding(
+            self,
+            didFinishScreenFlow: screen,
+            with: coordinator.context,
+            in: coordinator.landing
+        )
     }
     
     func flexibleLandingCoordinator(
@@ -43,7 +59,11 @@ extension FlexibleLanding: FlexibleLandingCoordinatorDelegate {
         didFinishLandingFlow landing: FlexibleLandingModel
     ) {
         coordinators.removeAll(coordinator)
-        delegate?.flexibleLanding(self, didFinishLandingFlow: landing)
+        delegate?.flexibleLanding(
+            self,
+            didFinishLandingFlow: coordinator.landing,
+            with: coordinator.context
+        )
     }
 }
 

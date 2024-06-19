@@ -4,13 +4,22 @@ public protocol FlexibleLandingDelegate: AnyObject {
     
     func flexibleLanding(
         _ flexibleLanding: FlexibleLanding,
-        didFinishScreenFlow screen: FlexibleLandingScreen,
+        didPresentScreen screen: FlexibleLandingScreen,
+        with context: [String: Any],
         in landing: FlexibleLandingModel
     )
     
     func flexibleLanding(
         _ flexibleLanding: FlexibleLanding,
-        didFinishLandingFlow landing: FlexibleLandingModel
+        didFinishScreenFlow screen: FlexibleLandingScreen,
+        with context: [String: Any],
+        in landing: FlexibleLandingModel
+    )
+    
+    func flexibleLanding(
+        _ flexibleLanding: FlexibleLanding,
+        didFinishLandingFlow landing: FlexibleLandingModel,
+        with context: [String: Any]
     )
 }
 
@@ -20,12 +29,21 @@ public extension FlexibleLandingDelegate {
     
     func flexibleLanding(
         _ flexibleLanding: FlexibleLanding,
-        didFinishScreenFlow screen: FlexibleLandingScreen,
+        didPresentScreen screen: FlexibleLandingScreen,
+        with context: [String: Any],
         in landing: FlexibleLandingModel
     ) { }
     
     func flexibleLanding(
         _ flexibleLanding: FlexibleLanding,
-        didFinishLandingFlow landing: FlexibleLandingModel
+        didFinishScreenFlow screen: FlexibleLandingScreen,
+        with context: [String: Any],
+        in landing: FlexibleLandingModel
+    ) { }
+    
+    func flexibleLanding(
+        _ flexibleLanding: FlexibleLanding,
+        didFinishLandingFlow landing: FlexibleLandingModel,
+        with context: [String: Any]
     ) { }
 }
